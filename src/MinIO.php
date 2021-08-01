@@ -181,7 +181,6 @@ class MinIO
 
     function addPolicy($policyFile)
     {
-        // Example: ./bin/mc admin policy add myminio/ userbucketsonly /tmp/userbucketsonly.json
         $filename = basename($policyFile);         // $file is set to "index.json"
         $policyName = basename($filename, ".json"); // $file is set to "index"
 
@@ -200,7 +199,6 @@ class MinIO
 
     function removePolicy($policyName)
     {
-        // Example:  ./bin/mc admin policy remove myminio/ userbucketsonly
         $output = shell_exec("./bin/mc admin policy remove {$this->alias}/ {$policyName} 2>&1");
         return $output;
     }
