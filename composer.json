@@ -1,0 +1,22 @@
+{
+    "name": "chapdel/minio",
+    "description": "PHP Minio admin wrapper",
+    "type": "library",
+    "keywords": ["cloud", "MinIO", "s3", "storage"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chapdel",
+            "email": "chapdel.kamga2@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MinIO\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2|^8.0"
+    }
+}
